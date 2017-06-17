@@ -1,10 +1,11 @@
 +++
-date = "2017-01-28T15:00:00"
-draft = false
-math = false
-highlight = false
-tags = ["hugo","web"]
 title = "Crear websites estáticos con Hugo"
+draft = false
+highlight = false
+math = false
+tags = ["hugo","web"]
+date = "2017-01-28T15:00:00+01:00"
+
 summary = """
 Hugo es un framework para la creación de websites de contenido estático. 
 """

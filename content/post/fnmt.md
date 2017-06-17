@@ -4,7 +4,7 @@ draft = false
 highlight = false
 math = false
 tags = ["FNMT","DNIe","certificados digitales","seguridad","Firefox"]
-date = "2017-05-13T12:00:00+01:00"
+date = "2017-05-06T12:00:00+02:00"
 
 summary = """
 Características de los certificados digitales de la Fábrica Nacional de Moneda y Timbre - Real Casa de la Moneda (*FNMT-RCM*) y su uso con *Firefox*.

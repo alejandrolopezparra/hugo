@@ -1,10 +1,11 @@
 +++
-date = "2017-02-11T12:00:00"
+title = "Alojar websites estáticos en Amazon Simple Storage Service (S3)"
 draft = false
 highlight = false
 math = false
 tags = ["amazon","hugo","web"]
-title = "Alojar websites estáticos en Amazon Simple Storage Service (S3)"
+date = "2017-02-11T12:00:00+01:00"
+
 summary = """
 Amazon S3 es un servicio web que ofrece una infraestructura de almacenamiento de datos escalable, fiable y de baja latencia. 
 """

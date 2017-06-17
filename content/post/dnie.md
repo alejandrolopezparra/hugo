@@ -4,7 +4,7 @@ draft = false
 highlight = false
 math = false
 tags = ["DNIe","certificados digitales","seguridad","macOS","Firefox"]
-date = "2017-04-22T13:33:10+01:00"
+date = "2017-04-22T13:33:10+02:00"
 
 summary = """
 Características del Documento Nacional de Identidad electrónico español (*DNIe*) y su uso en el sistema operativo *macOS*.
