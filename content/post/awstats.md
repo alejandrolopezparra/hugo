@@ -3,7 +3,7 @@ title = "Generar estadísticas de websites con AWStats"
 draft = false
 highlight = false
 math = false
-tags = ["awstats","amazon", "web"]
+tags = ["awstats","amazon","web","macOS"]
 date = "2017-03-25T16:39:03+01:00"
 
 summary = """
@@ -50,7 +50,7 @@ En este caso, optaremos por las 3 bases de datos de *MaxMind GeoLite* así que, 
 ## 2. Instalar Perl
 La mayoría de los sistemas operativos vienen con el intérprete de *Perl* pre-instalado o disponen de un instalador que facilita la labor. Éste es el caso de *macOS*, que ya cuenta con *Perl* como parte de las utilidades que acompañan al sistema operativo así que no es necesario instalarlo.
 
-Sin embargo, además del intérprete de *Perl*, es necesario disponer del módulo [Geo::IP](http://search.cpan.org/~maxmind/Geo-IP-1.50/lib/Geo/IP.pm) de *MaxMind* para *Perl* de forma que *AWStats* pueda hacer uso de sus bases de datos de geolocalización. En macOS y otros sistemas operativos, es tan fácil como ejecutar el comando [cpan](https://metacpan.org/pod/distribution/CPAN/scripts/cpan) que viene con *Perl*.
+Sin embargo, además del intérprete de *Perl*, es necesario disponer del módulo [Geo::IP](http://search.cpan.org/~maxmind/Geo-IP-1.50/lib/Geo/IP.pm) de *MaxMind* para *Perl* de forma que *AWStats* pueda hacer uso de sus bases de datos de geolocalización. En *macOS* y otros sistemas operativos, es tan fácil como ejecutar el comando [cpan](https://metacpan.org/pod/distribution/CPAN/scripts/cpan) que viene con *Perl*.
 
 `cpan Geo::IP`
 

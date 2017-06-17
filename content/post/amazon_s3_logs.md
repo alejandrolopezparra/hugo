@@ -3,7 +3,7 @@ title = "Logs de acceso a websites en Amazon S3"
 draft = false
 highlight = false
 math = false
-tags = ["amazon", "web"]
+tags = ["amazon","web","macOS"]
 date = "2017-03-04T15:39:03+01:00"
 
 summary = """

@@ -3,7 +3,7 @@ date = "2017-02-11T12:00:00"
 draft = false
 highlight = false
 math = false
-tags = ["amazon","web"]
+tags = ["amazon","hugo","web"]
 title = "Alojar websites estáticos en Amazon Simple Storage Service (S3)"
 summary = """
 Amazon S3 es un servicio web que ofrece una infraestructura de almacenamiento de datos escalable, fiable y de baja latencia. 
@@ -47,6 +47,6 @@ Existen multitud de registradores de dominios y muchos de ellos también proporc
 Existen otras alternativas que merecerían la pena explorar para valorar la que mejor se adapta a las necesidades de cada uno:
 
 - [Google Cloud Storage](https://cloud.google.com/storage/) con su [guía](https://cloud.google.com/storage/docs/hosting-static-website). De pago.
-- [Github Pages](https://pages.github.com) que dispone de un [tutorial](https://gohugo.io/tutorials/github-pages-blog/) para [Hugo](https://gohugo.io). Gratuito.
-- [BitBucket](https://bitbucket.org/) que también tiene un [tutorial](https://gohugo.io/tutorials/hosting-on-bitbucket/) para [Hugo](https://gohugo.io). Gratuito.
-- [GitLab](https://about.gitlab.com/) que también ofrece un [tutorial](https://gohugo.io/tutorials/hosting-on-gitlab/) para [Hugo](https://gohugo.io). Gratuito.
+- [Github Pages](https://pages.github.com) que dispone de un [tutorial para Hugo](https://gohugo.io/tutorials/github-pages-blog/). Gratuito.
+- [BitBucket](https://bitbucket.org/) que también tiene un [tutorial para Hugo](https://gohugo.io/tutorials/hosting-on-bitbucket/). Gratuito.
+- [GitLab](https://about.gitlab.com/) que también ofrece un [tutorial para Hugo](https://gohugo.io/tutorials/hosting-on-gitlab/). Gratuito.
