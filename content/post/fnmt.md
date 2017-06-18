@@ -25,7 +25,7 @@ En este artículo se describirán sus principales características, los servicio
 Según se explica en la [web de Prestador de Servicios de Certificación](http://www.cert.fnmt.es/certificados) de la *FNMT-RCM*, ésta emite diferentes tipos de certificados digitales o electrónicos en función del destinatario de los mismos: persona física, representante, Administración Pública y de componente.
 
 ### 1.1. Certificado de Persona Física
-Los [certificados de Persona Física, Ciudadano o Usuario](https://www.sede.fnmt.gob.es/certificados/persona-fisica) se emiten sin coste a cualquier ciudadano español o extranjero que esté en posesión de su DNI o NIE previa verificación de su identidad. Este certificado le permite identificarse de forma telemática, firmar y cifrar documentos electrónicos para realizar gestiones en [multitud de servicios online](https://www.cert.fnmt.es/certificados/donde-usar-certificado). Éstos son algunos ejemplos:
+Los [certificados de Persona Física, Ciudadano o Usuario](https://www.sede.fnmt.gob.es/certificados/persona-fisica) se emiten sin coste a cualquier ciudadano español o extranjero que esté en posesión de su *DNI* o *NIE* previa verificación de su identidad. Este certificado le permite identificarse de forma telemática, firmar y cifrar documentos electrónicos para realizar gestiones en [multitud de servicios online](https://www.cert.fnmt.es/certificados/donde-usar-certificado). Éstos son algunos ejemplos:
 
 * Presentación y liquidación de impuestos.
 * Presentación de recursos y reclamaciones.
@@ -35,7 +35,7 @@ Los [certificados de Persona Física, Ciudadano o Usuario](https://www.sede.fnmt
 
 Sería equivalente al *DNIe* pero se diferencian en algunos aspectos:
 
-* Es un **único certificado** válido para la autenticación, cifrado y firma electrónica, al contrario de lo que ocurre en el *DNIe* que contiene 2 certificados distintos (*AUTENTICACIÓN* y *FIRMA*).
+* Es un **único certificado** válido para la autenticación, cifrado y firma electrónica, al contrario de lo que ocurre en el *DNIe* que contiene 2 certificados distintos (`AUTENTICACIÓN` y `FIRMA`).
 * Tiene una **vigencia de 48 meses** en lugar de los 30 meses que tienen los certificados digitales incluidos dentro del *DNIe*.
 * Se puede realizar su **obtención telemáticamente**, sin tener que acudir a ninguna oficina, si se usa el *DNIe* o no han pasado más de 5 años desde la última vez que se acreditó la identidad.
 * Es un **archivo descargable** y no tiene soporte físico.
@@ -106,7 +106,7 @@ De la misma forma, si se está realizando una renovación, será necesario firma
 ### 2.2. Acreditación de identidad
 En el caso de que no se haya usado el *DNIe* en la solicitud del certificado digital, será necesario acudir a una de las [oficinas de registro](http://mapaoficinascert.appspot.com/) para acreditar la identidad y continuar con la solicitud del certificado digital. Este paso tampoco será necesario si se está renovando el certificado y no han pasado más de 5 años desde la última vez que se acreditó la identidad.
 
-Para ello, deberá presentar el DNI o pasaporte y, si es ciudadano extranjero, el NIE, junto con el código de solicitud que el usuario ha debido recibir en su correo electrónico.
+Para ello, deberá presentar el *DNI* o pasaporte y, si es ciudadano extranjero, el *NIE*, junto con el código de solicitud que el usuario ha debido recibir en su correo electrónico.
 
 ### 2.3. Descarga del certificado
 Una vez acreditada la identidad, ya sea por haber usado el *DNIe* en la solicitud o por haber acudido a alguna oficina de registro, se puede usar el código recibido por correo electrónico, el primer apellido y el número de DNI para descargar el certificado digital de persona física desde la [web de descarga sin *DNIe*](https://www.sede.fnmt.gob.es/certificados/persona-fisica/obtener-certificado-software/descargar-certificado) o la [web de descarga con *DNIe*](https://www.sede.fnmt.gob.es/certificados/persona-fisica/obtener-certificado-con-dnie/descargar-certificado).
@@ -116,7 +116,7 @@ La web de la *FNMT-RCM* también dispone de un servicio de verificación del est
 
 Para ello, se puede visitar la [web de verificación](https://www.sede.fnmt.gob.es/certificados/persona-fisica/verificar-estado) desde un navegador donde tengamos instalados los certificados a comprobar.
 
-## 4. Conclusiones
+## Conclusiones
 Los certificados digitales de la *FNMT-RCM* permiten realizar las mismas gestiones que los certificados que contiene el *DNIe* pero con un mayor alcance, ya que, además de para ciudadanos, también se emplean para Representantes legales, la Administración Pública y componentes como los servidores web *SSL/TLS*.
 
 Su principal ventaja es la facilidad de uso así como la compatibilidad con distintos equipos y sistemas operativos. Además, si se dispone de un *DNIe*, es especialmente cómoda la obtención de un certificado de persona física ya que la acreditación de la identidad se puede comprobar sin tener que acudir físicamente a una oficina de registro.

@@ -23,12 +23,12 @@ En este artículo se describirán sus principales características y algunos ser
 ### 1.1. Fundamentos básicos
 El *DNIe* se basa en principios matemáticos de criptografía aplicados a los sistemas de información para que éstos se puedan usar de forma segura. [Infraestructura de clave pública (PKI)](https://es.wikipedia.org/wiki/Infraestructura_de_clave_p%C3%BAblica), [certificados digitales](https://es.wikipedia.org/wiki/Certificado_digital) y [criptografía de clave pública o asimétrica](https://es.wikipedia.org/wiki/Criptograf%C3%ADa_asim%C3%A9trica) son los principales. Éstos permiten garantizar características básicas de la seguridad de la información: [Autenticación](https://es.wikipedia.org/wiki/Seguridad_de_la_informaci%C3%B3n#Autenticaci.C3.B3n_o_autentificaci.C3.B3n), [Confidencialidad](https://es.wikipedia.org/wiki/Seguridad_de_la_informaci%C3%B3n#Confidencialidad), [Disponibilidad](https://es.wikipedia.org/wiki/Seguridad_de_la_informaci%C3%B3n#Disponibilidad), [Integridad](https://es.wikipedia.org/wiki/Seguridad_de_la_informaci%C3%B3n#Integridad) y [No repudio](https://es.wikipedia.org/wiki/Seguridad_de_la_informaci%C3%B3n#No_repudio_o_irrefutabilidad).
 
-De forma resumida, podríamos [describir el *DNIe*](https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_103) como una [tarjeta inteligente o smart card](https://es.wikipedia.org/wiki/Tarjeta_inteligente) que incorpora un chip criptográfico capaz de almacenar de forma segura la misma información que se encuentra impresa, las imágenes digitalizadas de la fotografía, firma manuscrita e impresiones dactilares. De la misma forma, contiene 2 certificados digitales denominados *AUTENTICACIÓN* y *FIRMA* con sus correspondientes claves privadas que están protegidas por una clave personal de acceso (*PIN*) alfanumérica. Es importante notar que, aunque el *DNIe* tiene una vigencia de 10 años desde el momento de su expedición, los certificados digitales almacenados internamente **caducan a los 30 meses** y, por tanto, **deben ser renovados en una comisaría de policía** para que sigan siendo válidos.
+De forma resumida, podríamos [describir el *DNIe*](https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_103) como una [tarjeta inteligente o smart card](https://es.wikipedia.org/wiki/Tarjeta_inteligente) que incorpora un chip criptográfico capaz de almacenar de forma segura la misma información que se encuentra impresa, las imágenes digitalizadas de la fotografía, firma manuscrita e impresiones dactilares. De la misma forma, contiene 2 certificados digitales denominados `AUTENTICACIÓN` y `FIRMA` con sus correspondientes claves privadas que están protegidas por una clave personal de acceso (*PIN*) alfanumérica. Es importante notar que, aunque el *DNIe* tiene una vigencia de 10 años desde el momento de su expedición, los certificados digitales almacenados internamente **caducan a los 30 meses** y, por tanto, **deben ser renovados en una comisaría de policía** para que sigan siendo válidos.
 
 El chip criptográfico posibilita las siguientes funciones cuando sus certificados digitales están en vigor y se conoce el *PIN*:
 
-* Acreditar electrónicamente y de forma inequívoca la identidad de la persona. Es una **Autenticación** de doble factor, algo que se tiene (el certificado digital *AUTENTICACIÓN* que va dentro del *DNIe*) y algo que se conoce (el *PIN*).
-* Firmar digitalmente documentos electrónicos, otorgándoles validez jurídica. Se usa el *PIN* y el certificado digital *FIRMA* para proporcionar **Integridad** y **No repudio**.
+* Acreditar electrónicamente y de forma inequívoca la identidad de la persona. Es una **Autenticación** de doble factor, algo que se tiene (el certificado digital `AUTENTICACIÓN` que va dentro del *DNIe*) y algo que se conoce (el *PIN*).
+* Firmar digitalmente documentos electrónicos, otorgándoles validez jurídica. Se usa el *PIN* y el certificado digital `FIRMA` para proporcionar **Integridad** y **No repudio**.
 
 Se pueden encontrar más detalles técnicos revisando las características [electrónicas](https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_083) y [físicas](https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_084) del *DNIe*.
 
@@ -88,18 +88,18 @@ A continuación debemos instalar el driver *PKCS#11* compatible con el *DNIe* qu
 
 Una vez instalado el driver, se debe configurar *Firefox* para que pueda usar el *DNIe* con un lector:
 
-* Ir a *Firefox > Preferencias > Avanzado > Cifrado > Dispositivos de seguridad*.
-* Seleccionar *Cargar*.
-* Asignar un nombre al módulo, por ejemplo, *DNIe*.
-* Indicar la ruta hacia el driver, ```/Library/Libpkcs11-dnie/lib/libpkcs11-dnie.so```
-* Hacer clic en *Aceptar*.
+1. Ir a `Firefox > Preferencias > Avanzado > Cifrado > Dispositivos de seguridad`.
+2. Seleccionar `Cargar`.
+3. Asignar un nombre al módulo, por ejemplo, *DNIe*.
+4. Indicar la ruta hacia el driver, ```/Library/Libpkcs11-dnie/lib/libpkcs11-dnie.so```
+5. Hacer clic en `Aceptar`.
 
 ### 3.3. Instalar los certificados de la policía
 Para que *Firefox* no dé errores de verificación es necesario instalar los [certificados de las Autoridades de Certificación raíz](https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_077) de la *DGP* y aprobar cada uno de ellos para los siguientes usos:
 
-* Identificar páginas web.
-* Usuarios de correo electrónico.
-* Desarrolladores de aplicaciones.
+* `Identificar páginas web`.
+* `Usuarios de correo electrónico`.
+* `Desarrolladores de aplicaciones`.
 
 Aunque no es estrictamente necesario, sí que es recomendable repetir el paso anterior con los [certificados de las Autoridades de Certificación subordinadas](https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_078) de la *DGP*.
 
@@ -111,11 +111,11 @@ Una vez completados todos los pasos de instalación y preparación del sistema p
 
 Estos servicios nos permitirán, además, conocer el estado de los certificados que van dentro del *DNIe*:
 
-* **Válido**: el certificado digital no ha sido revocado ni ha expirado.
-* **Revocado**: el certificado digital ha sido invalidado por la *DGP*. Esto suele ocurrir al generar un nuevo *DNIe* o renovar sus certificados digitales.
-* **Expirado**: se ha superado la fecha en la que caduca el certificado digital y debería renovarse en una comisaría de policía.
+* `Válido`: el certificado digital no ha sido revocado ni ha expirado.
+* `Revocado`: el certificado digital ha sido invalidado por la *DGP*. Esto suele ocurrir al generar un nuevo *DNIe* o renovar sus certificados digitales.
+* `Expirado`: se ha superado la fecha en la que caduca el certificado digital y debería renovarse en una comisaría de policía.
 
-## 4. Conclusiones
+## Conclusiones
 En los últimos años, a través de la [Agenda Digital para España](http://www.agendadigital.gob.es), el gobierno español está impulsando distintos planes en materia de Tecnologías de la Información y las Comunicaciones (TIC) y de Administración Electrónica para el cumplimiento de los objetivos de la Agenda Digital para Europa e incorpora objetivos específicos para el desarrollo de la economía y la sociedad digital en España.
 
 El *DNIe* forma parte de estos planes ya que es una herramienta que permite a los ciudadanos españoles su **identificación digital o electrónica segura** frente a la administración pública y las empresas privadas, posibilitando el acceso a los servicios de la [Sociedad de la Información](https://es.wikipedia.org/wiki/Sociedad_de_la_informaci%C3%B3n).
