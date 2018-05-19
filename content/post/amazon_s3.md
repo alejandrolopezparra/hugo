@@ -22,7 +22,7 @@ Como continuación al [primer post](/post/hugo/) en el que hablaba de [Hugo](htt
 
 A continuación se describen los 2 pasos que hay que realizar para poder publicar una web estática: (1) alojar el website y (2) asociar un dominio.
 
-## Alojar un website estático en Amazon S3
+## 1. Alojar un website estático en Amazon S3
 
 La capacidad de alojamiento de webs estáticas de *Amazon S3* está explicada en detalle [aquí](https://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html) pero, en resumen, nos permite lo siguiente:
 
@@ -34,7 +34,7 @@ La capacidad de alojamiento de webs estáticas de *Amazon S3* está explicada en
 
 También contamos con un [asistente o guía rápida](https://console.aws.amazon.com/quickstart-website/new) que nos facilita el proceso de alojamiento de un nuevo website.
 
-## Asociar un dominio propio
+## 2. Asociar un dominio propio
 
 Una vez tenemos nuestro website alojado en un *Bucket* y lo hemos publicado en un *Endpoint*, es el momento de asociarle un nombre de un dominio propio, por ejemplo [www.alejandrolopezparra.es](http://www.alejandrolopezparra.es).
 

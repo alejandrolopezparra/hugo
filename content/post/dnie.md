@@ -19,8 +19,8 @@ El [Documento Nacional de Identidad electrónico español (*DNIe*)](https://www.
 
 En este artículo se describirán sus principales características y algunos servicios online donde se puede usar. También se indicarán los pasos para hacerlo funcionar correctamente en el sistema operativo [*macOS*](https://es.wikipedia.org/wiki/MacOS) de Apple.
 
-## Características del *DNIe*
-### Fundamentos básicos del *DNIe*
+## 1. Características del *DNIe*
+### 1.1. Fundamentos básicos
 El *DNIe* se basa en principios matemáticos de criptografía aplicados a los sistemas de información para que éstos se puedan usar de forma segura. [Infraestructura de clave pública (PKI)](https://es.wikipedia.org/wiki/Infraestructura_de_clave_p%C3%BAblica), [certificados digitales](https://es.wikipedia.org/wiki/Certificado_digital) y [criptografía de clave pública o asimétrica](https://es.wikipedia.org/wiki/Criptograf%C3%ADa_asim%C3%A9trica) son los principales. Éstos permiten garantizar características básicas de la seguridad de la información: [Autenticación](https://es.wikipedia.org/wiki/Seguridad_de_la_informaci%C3%B3n#Autenticaci.C3.B3n_o_autentificaci.C3.B3n), [Confidencialidad](https://es.wikipedia.org/wiki/Seguridad_de_la_informaci%C3%B3n#Confidencialidad), [Disponibilidad](https://es.wikipedia.org/wiki/Seguridad_de_la_informaci%C3%B3n#Disponibilidad), [Integridad](https://es.wikipedia.org/wiki/Seguridad_de_la_informaci%C3%B3n#Integridad) y [No repudio](https://es.wikipedia.org/wiki/Seguridad_de_la_informaci%C3%B3n#No_repudio_o_irrefutabilidad).
 
 De forma resumida, podríamos [describir el *DNIe*](https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_103) como una [tarjeta inteligente o smart card](https://es.wikipedia.org/wiki/Tarjeta_inteligente) que incorpora un chip criptográfico capaz de almacenar de forma segura la misma información que se encuentra impresa, las imágenes digitalizadas de la fotografía, firma manuscrita e impresiones dactilares. De la misma forma, contiene 2 certificados digitales denominados `AUTENTICACIÓN` y `FIRMA` con sus correspondientes claves privadas que están protegidas por una clave personal de acceso (*PIN*) alfanumérica. Es importante notar que, aunque el *DNIe* tiene una vigencia de 10 años desde el momento de su expedición, los certificados digitales almacenados internamente **caducan a los 30 meses** y, por tanto, **deben ser renovados en una comisaría de policía** para que sigan siendo válidos.
@@ -32,7 +32,7 @@ El chip criptográfico posibilita las siguientes funciones cuando sus certificad
 
 Se pueden encontrar más detalles técnicos revisando las características [electrónicas](https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_083) y [físicas](https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_084) del *DNIe*.
 
-### Versiones del *DNIe*
+### 1.3. Versiones
 Existen 2 variantes distintas del *DNIe*.
 
 * La [primera](https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_106) apareció por primera vez en el año 2006 y dejó de expedirse en 2015.
@@ -47,7 +47,7 @@ Ambas versiones son válidas a día de hoy pero tienen [algunas diferencias](htt
 * Permite el **uso desde smartphones y tablets** a través de la tecnología de comunicación inalámbrica de corto alcance y alta frecuencia [*NFC*](https://es.wikipedia.org/wiki/Near_field_communication). Como medida de protección adicional, incorpora un número de autenticación de tarjeta (*Card Authentication Number* o *CAN*).
 * Presenta una estructura de datos **equivalente al pasaporte** que posibilita usarlo como Documento de Viaje en los países que disponen de Pasos Rápidos de Frontera (*ABC Systems*).
 
-### Requisitos del *DNIe*
+### 1.2. Requisitos
 Para poder hacer uso del *DNIe* es necesario cumplir algunos requisitos físicos (*hardware*) y lógicos (*software*):
 
 * Se debe tener alguno de los siguientes elementos *hardware*:
@@ -66,7 +66,7 @@ Para poder hacer uso del *DNIe* es necesario cumplir algunos requisitos físicos
      * Sistema operativo (*Android*, *iOS*).
      * Aplicación compatible con *DNI 3.0*.
 
-## Usos del *DNIe*
+## 2. Usos del *DNIe*
 Como se comentaba al principio del artículo, el *DNIe* posibilita realizar **gestiones de forma segura a través de Internet** tanto con la Administración Pública como con algunas entidades privadas que lo han adoptado.
 
 En la [web del dnielectronico](https://www.dnielectronico.es) se recoge un listado exhaustivo de servicios disponibles de la [Administración General del Estado](https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_510), [Comunidades Autónomas](https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_520), [Administración Local](https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_530), [otros organismos públicos](https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_540) y el [sector privado](https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_550).
@@ -77,13 +77,13 @@ De todos ellos, algunos de los más importantes son los siguientes:
 * Sede electrónica de la [Seguridad Social](https://sede.seg-social.gob.es/).
 * Sede electrónica de la [Agencia Tributaria](https://www.agenciatributaria.gob.es/AEAT.sede/Inicio/Inicio.shtml).
 
-## El *DNIe* en *macOS*
+## 3. El *DNIe* en *macOS*
 Además de disponer de un lector compatible, se necesitan completar algunos pasos para que el *DNIe* sea reconocido y funcione correctamente en *macOS*. Lo más recomendable es seguir las instrucciones que se describen en el [manual de instalación](https://www.dnielectronico.es/PDFs/manuales_instalacion_unix/Manual_de_Instalacion_de_MulticardPKCS11_DNIE_V1.pdf) publicado por la *DGP*.
 
-### Instalar *Firefox*
+### 3.1. Instalar *Firefox*
 A día de hoy, el único navegador soportado por el *DNIe* en *macOS* es *Mozilla Firefox* por lo que tendremos que descargar la versión de Escritorio desde su [web oficial](https://www.mozilla.org/es-ES/firefox/desktop/) e instalarlo.
 
-### Instalar el driver *PCKS#11*
+### 3.2. Driver *PCKS#11*
 A continuación debemos instalar el driver *PKCS#11* compatible con el *DNIe* que se puede descargar desde el [área de descargas](https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_1113) de la web del dnielectronico.
 
 Una vez instalado el driver, se debe configurar *Firefox* para que pueda usar el *DNIe* con un lector:
@@ -94,7 +94,7 @@ Una vez instalado el driver, se debe configurar *Firefox* para que pueda usar el
 4. Indicar la ruta hacia el driver, ```/Library/Libpkcs11-dnie/lib/libpkcs11-dnie.so```
 5. Hacer clic en `Aceptar`.
 
-### Instalar los certificados de la policía
+### 3.3. Instalar los certificados de la policía
 Para que *Firefox* no dé errores de verificación es necesario instalar los [certificados de las Autoridades de Certificación raíz](https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_077) de la *DGP* y aprobar cada uno de ellos para los siguientes usos:
 
 * `Identificar páginas web`.
@@ -103,7 +103,7 @@ Para que *Firefox* no dé errores de verificación es necesario instalar los [ce
 
 Aunque no es estrictamente necesario, sí que es recomendable repetir el paso anterior con los [certificados de las Autoridades de Certificación subordinadas](https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_078) de la *DGP*.
 
-### Verificar que funciona
+### 3.4. Verificar que funciona
 Una vez completados todos los pasos de instalación y preparación del sistema para el uso del *DNIe*, es el momento de comprobar que funciona correctamente. Para ello debemos utilizar un servicio denominado *Autoridad de Validación* y, según se indica en la [sección de validación](https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_320) de la web del dnielectronico, hay 2 prestadores de servicio de validación para el *DNIe*:
 
 * [Fábrica Nacional de Moneda y Timbre - Real Casa de la Moneda (FNMT-RCM)](https://www.sede.fnmt.gob.es/certificados/persona-fisica/verificar-estado).

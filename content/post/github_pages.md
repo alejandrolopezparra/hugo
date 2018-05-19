@@ -4,9 +4,9 @@ draft = false
 highlight = true
 math = false
 tags = ["github","amazon","hugo","web"]
-date = "2017-05-20T12:00:00+02:00"
+date = "2017-05-27T12:00:00+02:00"
 summary = """
-*GitHub Pages* es un servicio gratuito de alojamiento de websites estáticos que rivaliza con *Amazon S3*. 
+GitHub Pages es un servicio gratuito de alojamiento de websites estáticos que rivaliza con Amazon S3. 
 """
 
 [header]
@@ -21,7 +21,7 @@ Como alternativa a [Amazon Simple Storage Service (S3)](http://docs.aws.amazon.c
 
 A continuación se describen sus características y los pasos que hay que realizar para poder publicar una web estática en *GitHub Pages* (alojar el website y asociar un dominio).
 
-## Características de *GitHub Pages*
+## 1. Características de *GitHub Pages*
 *GitHub Pages* dispone de varios [tipos de cuentas o planes](https://help.github.com/articles/github-s-billing-plans/):
 
 * [Privada](https://github.com/pricing): tiene un coste mensual que permite que los ficheros se alojen de forma privada entre otras ventajas.
@@ -49,7 +49,7 @@ Por otro lado, dispone de algunas **opciones avanzadas**:
 * Tiene [soporte para cientos de tipos MIME](https://help.github.com/articles/mime-types-on-github-pages/).
 * Usar [submódulos dentro de las páginas](https://help.github.com/articles/using-submodules-with-pages/).
 
-## Alojar un website estático en *GitHub Pages*
+## 2. Alojar un website estático en *GitHub Pages*
 La capacidad de alojamiento de webs estáticas de *GitHub Pages* está explicada de forma sencilla en [este tutorial oficial](https://pages.github.com/).
 
 El proceso para un website personal sería el siguiente:
@@ -70,11 +70,11 @@ $# git commit -m "Initial commit"
 $# git push -u origin master
 ```
 
-Sólo con esos tres pasos, ya tendríamos nuestra página web personal accesible a través de un *Endpoint* seguro `HTTPS://nombre.github.io` donde `nombre` se corresponde con el nombre de usuario de la cuenta de *GitHub*. En mi caso, es `https://alejandrolopezparra.github.io`.
+Sólo con esos tres pasos, ya tendríamos nuestra página web personal accesible a través de un *Endpoint* seguro `HTTPS://nombre.github.io` donde `nombre` se corresponde con el nombre de usuario de la cuenta de *GitHub*. En mi caso, es [https://alejandrolopezparra.github.io](https://alejandrolopezparra.github.io).
 
 Para el caso concreto de *Hugo*, contamos con un [tutorial](https://gohugo.io/tutorials/github-pages-blog/) que trata el despliegue en *GitHub Pages* de páginas web basadas en *Hugo* tanto personales como de organizaciones y también de proyectos. También disponemos de una [guía detallada sobre *Hugo* y *GitHub Pages*](https://georgecushen.com/create-your-website-with-hugo/) del creador del [tema *Academic* para *Hugo*](https://themes.gohugo.io/academic/). 
 
-## Asociar un dominio propio
+## 3. Asociar un dominio propio
 Una vez tenemos nuestro website alojado en un *Repository* y publicado en un *Endpoint* de *GitHub*, es el momento de que podamos asociarle un nombre de un dominio personalizado como, por ejemplo, [www.alejandrolopezparra.es](http://www.alejandrolopezparra.es). El único inconveniente de este paso es que perderemos la opción de usar *HTTPS* ya que *GitHub Pages* sólo puede usarlo con el domino `github.io`[^Cloudflare].
 
 [^Cloudflare]: Habría una alternativa que es usar [*GitHub Pages* con *Cloudflare*](https://www.goyllo.com/github/pages/free-cloudflare-ssl-for-custom-domain/).
@@ -82,12 +82,12 @@ Una vez tenemos nuestro website alojado en un *Repository* y publicado en un *En
 Para lograrlo es necesario lo siguiente:
 
 1. **Registrar el dominio** en un registrador de dominios.
-2. **Crear un nombre en ese dominio** a través de un servicio *DNS* y configurarlo para que apunte al *Endpoint* definido anteriormente mediante lo que se conoce como alias o [registro *CNAME*](https://en.wikipedia.org/wiki/CNAME_record).
+2. **Crear un nombre en ese dominio** a través de un servicio *DNS* que apunte al *Endpoint* definido anteriormente mediante lo que se conoce como alias o [registro *CNAME*](https://en.wikipedia.org/wiki/CNAME_record).
 3. **Configurar el nombre de dominio** en *GitHub Pages* en las propiedades del *Repository* tal y como se indica [aquí](https://help.github.com/articles/adding-or-removing-a-custom-domain-for-your-github-pages-site/).
 
-De esta forma, cuando un navegador web intente resolver dicho nombre, recibirá como respuesta el *Endpoint* donde tenemos alojado nuestro website. Lo habitual es [crear un alias para el subdominio *www*](https://help.github.com/articles/setting-up-a-www-subdomain/) aunque en algunos proveedores *DNS* también es posible [crear un alias para el dominio raíz](https://help.github.com/articles/setting-up-an-apex-domain/). Gracias a esto, se puede acceder tanto a [www.alejandrolopezparra.es](http://www.alejandrolopezparra.es) como a [alejandrolopezparra.es](http://alejandrolopezparra.es), siendo habitualmente este último una redirección al primero.
+De esta forma, cuando un navegador web intente resolver dicho nombre, recibirá como respuesta el *Endpoint* donde tenemos alojado nuestro website. Lo habitual es [crear un alias para el subdominio *www*](https://help.github.com/articles/setting-up-a-www-subdomain/) aunque en algunos proveedores DNS también es posible [crear un alias para el dominio raíz](https://help.github.com/articles/setting-up-an-apex-domain/). Gracias a esto, se puede acceder tanto a [www.alejandrolopezparra.es](http://www.alejandrolopezparra.es) como a [alejandrolopezparra.es](http://alejandrolopezparra.es), siendo habitualmente este último una redirección al primero.
 
-En el caso de *GitHub Pages*, usar un **subdominio www** tiene sus [ventajas](https://help.github.com/articles/about-supported-custom-domains/#www-subdomains) y, si nuestro proveedor *DNS* no permite alias para el dominio raíz, tenemos la opción de conseguir el mismo efecto [a través de registros de tipo A](https://help.github.com/articles/setting-up-an-apex-domain/#configuring-a-records-with-your-dns-provider).
+En el caso de *GitHub Pages*, si nuestro proveedor *DNS* no permite alias para el dominio raíz, tenemos la opción de conseguir el mismo efecto [a través de registros de tipo A](https://help.github.com/articles/setting-up-an-apex-domain/#configuring-a-records-with-your-dns-provider).
 
 Existen multitud de registradores de dominios y muchos de ellos también proporcionan servicios *DNS*. *Amazon* ofrece estos servicios a través de [*Amazon Route 53*](https://aws.amazon.com/es/route53/) y dispone de una [guía](https://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-custom-domain-walkthrough.html#root-domain-walkthrough-switch-to-route53-as-dnsprovider) en la que explican cómo llevarlo a cabo. Otro prestador muy conocido de este tipo de servicios es [*Dyn*](http://dyn.com). En mi caso, uso [*GoDaddy*](https://es.godaddy.com) para ambas cosas aunque tiene la pega de no permitir alias del dominio raíz.
 
