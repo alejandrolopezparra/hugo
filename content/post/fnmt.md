@@ -21,10 +21,10 @@ De la misma forma que ocurría con el *DNIe*, permiten acreditar la identidad de
 
 En este artículo se describirán sus principales características, los servicios online donde se pueden usar y cómo obtenerlo, especialmente usando el navegador [*Firefox*](https://www.mozilla.org/es-ES/firefox/products/) de *Mozilla*.
 
-## 1. Certificados digitales de la *FNMT-RCM*
+## Características de los certificados de la *FNMT-RCM*
 Según se explica en la [web de Prestador de Servicios de Certificación](http://www.cert.fnmt.es/certificados) de la *FNMT-RCM*, ésta emite diferentes tipos de certificados digitales o electrónicos en función del destinatario de los mismos: persona física, representante, Administración Pública y de componente.
 
-### 1.1. Certificado de Persona Física
+### Certificado de Persona Física
 Los [certificados de Persona Física, Ciudadano o Usuario](https://www.sede.fnmt.gob.es/certificados/persona-fisica) se emiten sin coste a cualquier ciudadano español o extranjero que esté en posesión de su *DNI* o *NIE* previa verificación de su identidad. Este certificado le permite identificarse de forma telemática, firmar y cifrar documentos electrónicos para realizar gestiones en [multitud de servicios online](https://www.cert.fnmt.es/certificados/donde-usar-certificado). Éstos son algunos ejemplos:
 
 * Presentación y liquidación de impuestos.
@@ -45,17 +45,17 @@ Sería equivalente al *DNIe* pero se diferencian en algunos aspectos:
   * Configurar el navegador y el correo electrónico para que solicite una contraseña cuando se quiera hacer uso del certificado.
   * Realizar una copia de seguridad del certificado digital por si se corrompe o se borra.
 
-### 1.2. Certificado de Representante
+### Certificado de Representante
 Los [certificados de Representante](https://www.sede.fnmt.gob.es/certificados/certificado-de-representante) se expiden [con coste](https://www.sede.fnmt.gob.es/certificados/certificado-de-representante/lista-de-precios) a personas físicas en calidad de representantes legales de [personas jurídicas](https://www.sede.fnmt.gob.es/certificados/certificado-de-representante/persona-juridica), [administradores únicos o solidarios](https://www.sede.fnmt.gob.es/certificados/certificado-de-representante/administrador-unico-solidario) y [entidades sin personalidad jurídica](https://www.sede.fnmt.gob.es/certificados/certificado-de-representante/entidad-sin-personalidad-juridica).
 
-### 1.3. Administración Pública
+### Administración Pública
 Los tipos de [certificados de Administración Pública](https://www.sede.fnmt.gob.es/certificados/administracion-publica) que se expiden a Administraciones Públicas son los siguientes:
 
 * Certificado de firma electrónica del personal al servicio de la Administración Pública (Certificado de empleado público). 
 * Certificado de Sede electrónica en el ámbito de la Administración.
 * Certificado de Sello electrónico en el ámbito de la Administración.
 
-### 1.4. Certificados de Componente
+### Certificados de Componente
 Los [certificados de Componente](https://www.sede.fnmt.gob.es/certificados/certificado-componentes) se expiden [con coste](https://www.cert.fnmt.es/documents/10446703/10511896/Precios_Certificados_Ac_Componentes.pdf) para la identificación de servidores o aplicaciones informáticas:
 
 * Certificado de [servidor web seguro *SSL/TLS*](https://www.cert.fnmt.es/catalogo-de-servicios/certificados-electronicos/certificado-servidor) (estándar, SAN multidominio, wildcard).
@@ -63,10 +63,10 @@ Los [certificados de Componente](https://www.sede.fnmt.gob.es/certificados/certi
 * Certificado de [sello de entidad](https://www.cert.fnmt.es/catalogo-de-servicios/certificados-electronicos/sello-entidad).
 * Certificado de [sede y sello para la Administración Pública](https://www.sede.fnmt.gob.es/certificados/administracion-publica).
 
-## 2. Obtener un certificado de Persona Física
+## Obtener un certificado de Persona Física
 Para poder disponer de un certificado gratuito de persona física de la *FNMT-RCM*, también llamado de ciudadano o de usuario, es necesario realizar los siguientes 	[pasos explicados](https://www.sede.fnmt.gob.es/certificados/persona-fisica) en su web oficial: solicitud, acreditación de identidad y descarga.
 
-### 2.1. Solicitud o renovación del certificado
+### Solicitud o renovación del certificado
 Antes de realizar la petición propiamente dicha, es necesario tener en cuenta una serie de [consideraciones previas](https://www.sede.fnmt.gob.es/certificados/persona-fisica/obtener-certificado-software/consideraciones-previas) que se encuentran detallados en la web de la sede electrónica de la *FNMT-RCM*:
 
 * Los sistemas soportados son éstos:
@@ -82,7 +82,7 @@ Una vez preparado el sistema, ya se podría realizar la [solicitud de un nuevo c
 
 En el caso de la renovación de un certificado que aún no ha caducado, ésta se puede solicitar con hasta 60 días de antelación en la web de [renovación](https://www.sede.fnmt.gob.es/certificados/persona-fisica/renovar/solicitar-renovacion). 
 
-#### 2.1.1. Procedimiento con *Firefox*
+#### Procedimiento con *Firefox*
 En el caso de usar el navegador web *Firefox*, el proceso se resume en los siguientes pasos:
 
 1. Verificar que están activadas las [cookies de terceros](https://support.mozilla.org/es/kb/configuracion-privacidad-historial-navegacion-funcion-no-quiero-ser-rastreado) en la configuración de *Firefox*.
@@ -103,15 +103,15 @@ Si se ha usado el *DNIe* para realizar la solicitud de un nuevo certificado, ser
 
 De la misma forma, si se está realizando una renovación, será necesario firmarla con el certificado que se pretende renovar para autenticar la operación.
 
-### 2.2. Acreditación de identidad
+### Acreditación de identidad
 En el caso de que no se haya usado el *DNIe* en la solicitud del certificado digital, será necesario acudir a una de las [oficinas de registro](http://mapaoficinascert.appspot.com/) para acreditar la identidad y continuar con la solicitud del certificado digital. Este paso tampoco será necesario si se está renovando el certificado y no han pasado más de 5 años desde la última vez que se acreditó la identidad.
 
 Para ello, deberá presentar el *DNI* o pasaporte y, si es ciudadano extranjero, el *NIE*, junto con el código de solicitud que el usuario ha debido recibir en su correo electrónico.
 
-### 2.3. Descarga del certificado
+### Descarga del certificado
 Una vez acreditada la identidad, ya sea por haber usado el *DNIe* en la solicitud o por haber acudido a alguna oficina de registro, se puede usar el código recibido por correo electrónico, el primer apellido y el número de DNI para descargar el certificado digital de persona física desde la [web de descarga sin *DNIe*](https://www.sede.fnmt.gob.es/certificados/persona-fisica/obtener-certificado-software/descargar-certificado) o la [web de descarga con *DNIe*](https://www.sede.fnmt.gob.es/certificados/persona-fisica/obtener-certificado-con-dnie/descargar-certificado).
 
-## 3. Verificación de certificados
+## Verificar los certificados digitales
 La web de la *FNMT-RCM* también dispone de un servicio de verificación del estado y la validez de los certificados digitales que poseamos.
 
 Para ello, se puede visitar la [web de verificación](https://www.sede.fnmt.gob.es/certificados/persona-fisica/verificar-estado) desde un navegador donde tengamos instalados los certificados a comprobar.

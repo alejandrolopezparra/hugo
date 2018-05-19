@@ -1,15 +1,16 @@
-baseurl = "http://www.alejandrolopezparra.es/" # End your URL with a `/` trailing slash.
+baseurl = "https://www.alejandrolopezparra.es/" # End your URL with a `/` trailing slash.
 title = "Alejandro López Parra"
 copyright = "&copy; 2017 Alejandro López Parra"
 theme = "academic"
 enableEmoji = true
 footnotereturnlinkcontents = "<sup>^</sup>"
+canonifyURLs=false
 
 # Enable comments by entering your Disqus shortname
 disqusShortname = ""
 
 # Enable analytics by entering your Google Analytics tracking ID
-googleAnalytics = ""
+googleAnalytics = "UA-103012229-1"
 
 # Default language to use (if you setup multilingual support)
 defaultContentLanguage = "es"

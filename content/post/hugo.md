@@ -19,7 +19,7 @@ Como no podía ser de otra manera, inauguro esta web con un primer post que va d
 
 [*Hugo*](https://gohugo.io) es un framework que permite crear websites a base de contenido estático (*HTML*, *JavaScript*, *CSS*, ...), es decir, no se sustenta en el uso de servidores de aplicaciones o bases de datos. Lo contrario de lo que ocurre con los sistemas de gestión de contenidos o *CMS* habituales los cuales suelen estar basados en contenido dinámico: *WordPress*, *Drupal*, *Joomla!*, *Dokuwiki*, etc. Por suspuesto, esto, tiene sus ventajas e inconvenientes.
 
-## 1. Ventajas:
+## Ventajas:
 
 - **Simplicidad**: sólo se necesita un servidor web que sirva las páginas webs y el resto de contenido estático, no hay servidores de bases de datos ni de aplicaciones.
 - **Ahorro económico**: no se requiere un servidor muy potente ya que las peticiones que tiene que servir son más ligeras, no hay accesos a bases de datos ni procesamientos complejos en el lado del servidor.
@@ -28,7 +28,7 @@ Como no podía ser de otra manera, inauguro esta web con un primer post que va d
 - **Multihosting**: al estar basado en contenido estático, se puede usar cualquier hosting web o *CDN* (*Amazon S3*, *GitHub Pages*, *Dropbox*, *Heroku*, *Google Cloud Storage*, *Amazon CloudFront*, ...).
 - **Personalización**: soporta el uso de [*themes*](http://themes.gohugo.io/) o temas que permiten personalizar el aspecto del site de forma fácil manteniendo el contenido.
 
-## 2. Inconvenientes:
+## Inconvenientes:
 
 - **Funcionalidad limitada**: aunque con *JS* se puede implementar mucha funcionalidad en el lado del cliente, no es posible resolverlo todo. Hay cosas que sólo se pueden realizar en el lado del servidor: gestión de usuarios, comentarios, cestas de la compra, formularios de contacto, etc.
 - **Gestión de contenidos simple**: no está pensado para que haya varios autores ni permite una gestión de contenidos compleja.

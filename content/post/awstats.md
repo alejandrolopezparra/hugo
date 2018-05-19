@@ -36,7 +36,7 @@ Básicamente tiene 2 modos de funcionamiento:
 
 En el caso que nos ocupa, se usará desde la *CLI* y sólo para analizar logs de acceso al servidor web de *Amazon S3*. A continuación se describen los pasos para hacerlo funcionar: (1) descargar bases de datos de geolocalización, (2) instalar *Perl*, (3) instalar y configurar *AWStats*, y (4) generar informes con *AWStats*.
 
-## 1. Descargar bases de datos de geolocalización
+## Descargar bases de datos de geolocalización
 El primer paso a realizar es descargar la base de datos de geolocalización que se usará para poder obtener el país, sistema autónomo (*ASN*), organización, región y/o ciudad de cada una de las direcciones IP desde las que visiten nuestro website. *AWStats* soporta tres proveedores de bases de datos:
 
 - [GeoIPFree](http://software77.net/geo-ip/): es gratuita y libre pero sólo proporciona base de datos para el [país](http://software77.net/geo-ip/?DL=4).
@@ -49,7 +49,7 @@ En este caso, optaremos por las 3 bases de datos de *MaxMind GeoLite* así que, 
 $# gunzip -f GeoIP.dat.gz GeoIPASNum.dat.gz GeoLiteCity.dat.gz
 ```
 
-## 2. Instalar Perl
+## Instalar Perl
 La mayoría de los sistemas operativos vienen con el intérprete de *Perl* pre-instalado o disponen de un instalador que facilita la labor. Éste es el caso de *macOS*, que ya cuenta con *Perl* como parte de las utilidades que acompañan al sistema operativo así que no es necesario instalarlo.
 
 Sin embargo, además del intérprete de *Perl*, es necesario disponer del módulo [Geo::IP](http://search.cpan.org/~maxmind/Geo-IP-1.50/lib/Geo/IP.pm) de *MaxMind* para *Perl* de forma que *AWStats* pueda hacer uso de sus bases de datos de geolocalización. En *macOS* y otros sistemas operativos, es tan fácil como ejecutar el comando [cpan](https://metacpan.org/pod/distribution/CPAN/scripts/cpan) que viene con *Perl*.
@@ -61,7 +61,7 @@ $# cpan Geo::IP
 Si no disponemos de permisos de root/administrador o **por seguridad**, podemos ejecutarlo con un usuario sin privilegios pero, antes, hay que instalar [local::lib](https://metacpan.org/pod/local::lib) (un módulo de *Perl* que permite instalar módulos en directorios locales). Para llevarlo a cabo, lo más recomendable es usar la [técnica bootstrapping](https://metacpan.org/pod/local::lib#The-bootstrapping-technique).
 
 
-## 3. Instalar y configurar AWStats
+## Instalar y configurar AWStats
 Ahora sí, una vez cubiertos todos los requisito previos, llega el momento de descargar *AWStats* desde su [web oficial](http://www.awstats.org/#DOWNLOAD) y descomprimirlo para posteriormente configurarlo según las [instrucciones oficiales](http://www.awstats.org/docs/awstats_setup.html).
 
 Básicamente la configuración consiste en crear un fichero `awstats.$myserver.conf` con todas las opciones de configuración necesarias y donde `$myserver` es el nombre del servidor que aparecerán en los logs. Existen 2 posibilidades para llevarlo a cabo:
@@ -88,7 +88,7 @@ LoadPlugin="geoip_asn_maxmind GEOIP_STANDARD GeoIPASNum.dat+http://enc.com.au/it
 LoadPlugin="timezone CET"
 ```
 
-## 4. Generar informes con AWStats
+## Generar informes con AWStats
 Una vez que hemos conseguido instalar y configurar todas las herramientas necesarias, es el momento de generar los informes con las estadísticas desde los logs de nuestro website.
 
 El primer paso es construir la base de datos de estadísticas para comprobar si hay algún error, con el comando:
