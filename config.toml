@@ -1,6 +1,6 @@
 baseurl = "https://www.alejandrolopezparra.es/" # End your URL with a `/` trailing slash.
 title = "Alejandro López Parra"
-copyright = "&copy; 2017 Alejandro López Parra"
+copyright = "&copy; 2018 Alejandro López Parra"
 theme = "academic"
 enableEmoji = true
 footnotereturnlinkcontents = "<sup>^</sup>"
@@ -135,15 +135,15 @@ defaultContentLanguageInSubdir = false
     icon_pack = "fa"
     link = "http://www.giac.org/certified-professional/alejandro-lopez-parra/144656"
 
+  [[params.social]]
+    icon = "twitter"
+    icon_pack = "fa"
+    link = "//twitter.com/ALopezParra"
+
 #  [[params.social]]
 #    icon = "envelope"
 #    icon_pack = "fa"
 #    link = "mailto:test@example.org"
-#
-#  [[params.social]]
-#    icon = "twitter"
-#    icon_pack = "fa"
-#    link = "//twitter.com/GeorgeCushen"
 #
 #  [[params.social]]
 #    icon = "google-scholar"

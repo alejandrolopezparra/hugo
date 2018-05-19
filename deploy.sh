@@ -6,7 +6,7 @@ echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 hugo # if using a theme, replace with `hugo -t <YOURTHEME>`
 
 
-##### WEB
+##### https://github.com/alejandrolopezparra/alejandrolopezparra.github.io
 
 # Go To Public folder
 cd public
@@ -28,7 +28,7 @@ git push origin master
 cd ..
 
 
-##### HUGO
+##### https://github.com/alejandrolopezparra/hugo
 
 # Add changes to git.
 git add --all
