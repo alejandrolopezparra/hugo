@@ -5,7 +5,7 @@ active = true
 date = 2017-09-20T00:00:00
 
 title = "Temáticas"
-subtitle = "tags"
+subtitle = "tag cloud"
 
 # Order that this section will appear in.
 weight = 1
