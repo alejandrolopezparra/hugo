@@ -1,12 +1,12 @@
 +++
-title = "WannaCry, el ransomworm más mediático (I)"
-draft = true
+title = "WannaCry, el ransomworm más mediático"
+draft = false
 highlight = true
 math = false
-tags = ["ransomware","worm","ciberataque","seguridad"]
-date = "2017-06-03T12:00:00+02:00"
+tags = ["malware","ciberataque","seguridad"]
+date = "2017-07-08T12:00:00+02:00"
 summary = """
-Análisis de *WannaCry*, un *ransomware* que ha secuestrado los datos de cientos de miles de ordenadores en todo el mundo. 
+Análisis de *WannaCry*, un *ransomware* y *worm* que ha secuestrado los datos de cientos de miles de ordenadores en todo el mundo. 
 """
 
 [header]
@@ -27,7 +27,7 @@ A continuación se tratarán el análisis de las características técnicas del 
 - [***Ransomware***](https://es.wikipedia.org/wiki/Ransomware): secuestra los documentos digitales de los equipos y pide un rescate económico para recuperarlos.
 - [***Worm***](https://es.wikipedia.org/wiki/Worm): se propaga automáticamente para infectar a la mayor cantidad de equipos posibles.
 
-Éstas son algunas de las fuentes en las que me he basado para el análisis de este *malware*:
+Éstas son algunas de las fuentes en las que se basa este post para el análisis del *malware*:
 
 - [CERT de Seguridad e Industria](https://www.certsi.es/blog/ransomware-wannacry-responsable-ciberataque-mundial).
 - [MalwareBytes](https://blog.malwarebytes.com/threat-analysis/2017/05/the-worm-that-spreads-wanacrypt0r/).
@@ -139,5 +139,8 @@ No obstante, existe una remota posibilidad de recuperar la clave privada de la m
 - No ha pasado mucho tiempo desde el equipo se infectó o ha sido puesto en [*suspensión*](https://en.wikipedia.org/wiki/Sleep_mode) o [*hibernación*](https://en.wikipedia.org/wiki/Hibernation_(computing)) al poco de ser infectado.
 
 ## Conclusiones
+El análisis del malware pone de manifiesto que nos encontramos ante una **amenaza no especialmente sofisticada** ya que explota una vulnerabilidad conocida, para la que existían parches de seguridad desde meses antes.
 
-En el [próximo artículo](/post/wannacry_impacto/) se abordarán los antecedentes de este ciberataque así como el impacto a nivel mundial que ha tenido.
+Lo que sí ha quedado claro es la **falta de política de actualización** en muchas entidades o, como mínimo, que no se siguen. De la misma forma, también ha quedado evidenciado que tampoco se siguen las **políticas y procedimientos de bastionado**, ya que ni lo más básico se ha seguido, como es evitar la exposición en Internet de servicios innesarios o el filtrado para el acceso a los mismos.
+
+Esperemos que la trascendencia medíatica que ha tenido este suceso sirva para que **las entidades empiecen a tomarse más en serio esto de la seguridad** y se pongan las pilas en procedimientos tan básicos como las actualizaciones periódicas y el bastionado de los sistemas.

@@ -3,7 +3,7 @@ title = "DNI electrónico y certificados digitales"
 draft = false
 highlight = false
 math = false
-tags = ["DNIe","certificados digitales","seguridad","macOS","Firefox"]
+tags = ["DNIe","certificado digital","seguridad","macOS","Firefox"]
 date = "2017-04-22T13:33:10+02:00"
 
 summary = """

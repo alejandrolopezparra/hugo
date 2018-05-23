@@ -3,7 +3,7 @@ title = "Generar estadísticas de websites con AWStats"
 draft = false
 highlight = true
 math = false
-tags = ["awstats","amazon","web","macOS"]
+tags = ["amazon","web","macOS","awstats"]
 date = "2017-03-25T16:39:03+01:00"
 
 summary = """

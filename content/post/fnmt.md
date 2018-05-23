@@ -3,7 +3,7 @@ title = "Certificados digitales de la FNMT-RCM"
 draft = false
 highlight = false
 math = false
-tags = ["FNMT","DNIe","certificados digitales","seguridad","Firefox"]
+tags = ["DNIe","fnmt","certificado digital","seguridad","Firefox"]
 date = "2017-05-06T12:00:00+02:00"
 
 summary = """

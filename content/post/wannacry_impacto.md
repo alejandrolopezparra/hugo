@@ -3,7 +3,7 @@ title = "WannaCry, el ransomworm más mediático (II)"
 draft = true
 highlight = true
 math = false
-tags = ["ransomware","worm","ciberataque","seguridad"]
+tags = ["malware","ciberataque","seguridad"]
 date = "2017-06-17T12:00:00+02:00"
 summary = """
 Impacto de *WannaCry*, un *ransomware* que ha secuestrado los datos de cientos de miles de ordenadores en todo el mundo. 

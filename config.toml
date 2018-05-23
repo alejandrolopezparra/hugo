@@ -265,9 +265,14 @@ enableGitInfo = false
   weight = 1
 
 [[menu.main]]
+  name = "Charlas"
+  url = "#talks"
+  weight = 2
+
+[[menu.main]]
   name = "Bio"
   url = "#about"
-  weight = 2
+  weight = 3
 
 #[[menu.main]]
 #  name = "Publications"

@@ -7,7 +7,7 @@ active = true
 widget = "about"
 
 # Order that this section will appear in.
-weight = 3
+weight = 4
 
 # List your academic interests.
 [interests]
@@ -51,6 +51,6 @@ weight = 3
 
 # Biografía
 
-Natural de [Córdoba](http://www.turismodecordoba.org/) y entusiasta de la seguridad de la información desde la universitaria. Prueba de ello son los 2 proyectos fin de carrera en los que participé: "Implementación de una Infraestructura de Clave Pública (PKI)" y "Gestión de auto matrículas con certificados digitales". Hoy en día, después de una experiencia profesional de más de 12 años en empresas del sector de la seguridad informática, estoy particularmente especializado en **detección, alerta temprada y respuesta ante incidentes, tecnologías e inteligencia en ciberseguridad y redes**. En los últimos años me he centrado más en funciones de gestión pero sin abandonar lo que más me motiva, la parte técnica.
+Natural de [Córdoba](http://www.turismodecordoba.org/) y entusiasta de la seguridad de la información desde la etapa universitaria. Prueba de ello son los 2 proyectos fin de carrera en los que participé: "Implementación de una Infraestructura de Clave Pública (PKI)" y "Gestión de auto matrículas con certificados digitales". Hoy en día, después de una experiencia profesional de más de 12 años en empresas del sector de la seguridad informática, estoy particularmente especializado en **detección, alerta temprada y respuesta ante incidentes, tecnologías e inteligencia en ciberseguridad y redes**. En los últimos años me he centrado más en funciones de gestión pero sin abandonar lo que más me motiva, la parte técnica.
 
 En general, me apasiona todo lo relacionado con Internet, las nuevas tecnologías, la ciberseguridad, hacking, Android, Linux, Internet of Things. Siempre he tenido gran curiosidad por entender cómo funcionan las cosas y, en especial, cualquier tecnología.

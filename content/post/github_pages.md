@@ -3,7 +3,7 @@ title = "Alojar websites estáticos en GitHub Pages"
 draft = false
 highlight = true
 math = false
-tags = ["github","amazon","hugo","web"]
+tags = ["github","amazon","DNS","web","hugo"]
 date = "2017-05-20T12:00:00+02:00"
 summary = """
 *GitHub Pages* es un servicio gratuito de alojamiento de websites estáticos que rivaliza con *Amazon S3*. 

@@ -3,7 +3,7 @@ title = "Alojar websites estáticos en Amazon Simple Storage Service (S3)"
 draft = false
 highlight = false
 math = false
-tags = ["amazon","hugo","web"]
+tags = ["amazon","DNS","web","hugo"]
 date = "2017-02-11T12:00:00+01:00"
 
 summary = """
