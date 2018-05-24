@@ -1,23 +1,23 @@
 +++
-title = "El estado de la Ciberseguridad en España"
-date = 2017-09-19T21:30:00+02:00  # Schedule page publish date.
+title = "El ciberataque WannaCry"
+date = 2017-05-22T21:30:00+02:00  # Schedule page publish date.
 draft = false
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-time_start = 2017-09-19T10:00:00+02:00
-time_end = 2017-09-19T10:20:00+02:00
+time_start = 2017-05-22T18:00:00+02:00
+time_end = 2017-05-22T18:40:00+02:00
 
 # Abstract and optional shortened version.
-abstract = "Ponencia sobre el estado de la ciberseguridad, destacando la importancia de la monitorización de incidencias y la concienciación, ya que el eslabón más débil de la cadena en ciberseguridad es el usuario"
-abstract_short = "Ponencia sobre el estado de la cibserguridad en España"
+abstract = "Mesa de debate en el programa 'Vamos a ver' de Radio Televisión de Castilla y León sobre el ciberataque WannaCry que afectó a cientos de miles de equipos en todo el mundo y más de 1.000 dispositivos en España"
+abstract_short = "Mesa de debate en el programa 'Vamos a ver' de RTVCyL sobre WannaCry"
 
 # Name of event and optional event URL.
-event = "Foro Ransomware: Alerta Máxima"
-event_url = "http://ads.bps.com.es/eventos-bps/foroseguridad/index.html"
+event = "Radio Televisión de Castilla y León: Vamos a ver"
+event_url = "http://www.rtvcyl.es/ficha/CF66F305-E800-C31B-E80ACEA7106F5A2B/20171024/vamos/ver"
 
 # Location of event.
-location = "Madrid"
+location = "Valladolid"
 
 # Is this a selected talk? (true/false)
 selected = false
@@ -34,9 +34,9 @@ projects = []
 tags = ["ciberataque","malware","INCIBE", "seguridad"]
 
 # Links (optional).
-url_pdf = "http://www.redestelecom.es/siteresources/files/831/36.pdf"
+url_pdf = ""
 url_slides = ""
-url_video = ""
+url_video = "https://www.youtube.com/watch?v=1qhvAciAbYY&t=324"
 url_code = ""
 
 # Does the content use math formatting?
@@ -48,7 +48,7 @@ highlight = false
 # Featured image
 # Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
 [header]
-image = "talks/Foro_Ransomware_Alerta_Maxima.jpg"
+image = "talks/RTVCYL_Vamos_A_Ver.jpg"
 caption = ""
 
 +++

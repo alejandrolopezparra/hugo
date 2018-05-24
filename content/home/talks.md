@@ -4,7 +4,7 @@ widget = "talks"
 active = true
 date = 2018-05-23T21:30:00+02:00
 
-title = "Charlas y ponencias"
+title = "Últimas charlas y ponencias"
 subtitle = ""
 
 # Order that this section will appear in.

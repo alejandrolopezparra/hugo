@@ -1,5 +1,5 @@
 +++
-title = "Listado de ponencias y charlas"
+title = "Todas las charlas y ponencias"
 date = 2018-05-23T21:00:00
 math = false
 highlight = false

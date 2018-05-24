@@ -1,23 +1,23 @@
 +++
-title = "El estado de la Ciberseguridad en España"
-date = 2017-09-19T21:30:00+02:00  # Schedule page publish date.
+title = "CyberCamp 2017"
+date = 2017-12-01T21:30:00+02:00  # Schedule page publish date.
 draft = false
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-time_start = 2017-09-19T10:00:00+02:00
-time_end = 2017-09-19T10:20:00+02:00
+time_start = 2017-12-01T16:08:00+02:00
+time_end = 2017-12-01T16:10:00+02:00
 
 # Abstract and optional shortened version.
-abstract = "Ponencia sobre el estado de la ciberseguridad, destacando la importancia de la monitorización de incidencias y la concienciación, ya que el eslabón más débil de la cadena en ciberseguridad es el usuario"
-abstract_short = "Ponencia sobre el estado de la cibserguridad en España"
+abstract = "Entrevista sobre la competición CTF Individual en CyberCamp 2017"
+abstract_short = "Entrevista sobre el CTF Individual de CyberCamp 2017"
 
 # Name of event and optional event URL.
-event = "Foro Ransomware: Alerta Máxima"
-event_url = "http://ads.bps.com.es/eventos-bps/foroseguridad/index.html"
+event = "Radio Televisión Española: Telecantabria 2"
+event_url = "http://www.rtve.es/alacarta/videos/telecantabria/"
 
 # Location of event.
-location = "Madrid"
+location = "Santander"
 
 # Is this a selected talk? (true/false)
 selected = false
@@ -31,12 +31,12 @@ projects = []
 
 # Tags (optional).
 #   Set `tags = []` for no tags, or use the form `tags = ["A Tag", "Another Tag"]` for one or more tags.
-tags = ["ciberataque","malware","INCIBE", "seguridad"]
+tags = ["CTF","CyberCamp","INCIBE", "seguridad"]
 
 # Links (optional).
-url_pdf = "http://www.redestelecom.es/siteresources/files/831/36.pdf"
+url_pdf = ""
 url_slides = ""
-url_video = ""
+url_video = "http://rtve.es/v/4338714"
 url_code = ""
 
 # Does the content use math formatting?
@@ -48,7 +48,7 @@ highlight = false
 # Featured image
 # Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
 [header]
-image = "talks/Foro_Ransomware_Alerta_Maxima.jpg"
+image = "talks/RTVE_TeleCantabria.jpg"
 caption = ""
 
 +++

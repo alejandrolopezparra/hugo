@@ -1,6 +1,6 @@
 +++
-title = "Listado de posts"
-date = "2017-07-08T12:00:00+02:00"
+title = "Todos los posts"
+date = "2018-05-24T21:00:00+02:00"
 math = false
 highlight = false
 
