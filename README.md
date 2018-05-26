@@ -1,7 +1,7 @@
 # www.alejandrolopezparra.es source code
 Alejandro Lopez Parra's personal website is based on [*Hugo*](https://gohugo.io/), a popular open-source static site generators, and the [*Academic theme*](https://sourcethemes.com/academic/) for *Hugo*, a framework to help you create a beautiful website quickly.
 
-You can learn a lot about them reading the [*Hugo* doc](https://gohugo.io/documentation/) and the [*Academic theme* doc](https://sourcethemes.com/academic/docs/). 
+A lot about them can be learnt by reading the [*Hugo* doc](https://gohugo.io/documentation/) and the [*Academic theme* doc](https://sourcethemes.com/academic/docs/). 
 
 ## Install
 You can easily create your own website using mine:
