@@ -1,0 +1,28 @@
+backend:
+  name: github
+  repo: alejandrolopezparra/hugo # Path to your Github repository
+  branch: master # Branch to update (optional; defaults to master)ckend:
+
+
+publish_mode: editorial_workflow
+
+media_folder: "static/img/posts" # Media files will be stored in the repo under static/img/posts
+public_folder: "/img/posts" # The src attribute for uploaded media will begin with /img/posts
+
+collections:
+  - name: "posts" # Used in routes, e.g., /admin/collections/post
+    label: "Post" # Used in the UI
+    folder: "content/post" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+#    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{slug}}" # Filename template, e.g., title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Draft", name: "draft", widget: "boolean", default: true}
+      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Image", name: "image", widget: "image", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+# More info at
+#   - https://www.netlifycms.org/docs/add-to-your-site/
+#   - https://www.ragasirtahk.tk/2018/01/setting-up-netlify-cms-on-hugo/

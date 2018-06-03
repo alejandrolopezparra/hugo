@@ -1,16 +1,16 @@
 +++
-title = "WannaCry, el ransomworm más mediático (II)"
+title = "Netlify CMS, gestor de websites estáticos para GitHub"
 draft = true
 highlight = true
 math = false
-tags = ["malware","ciberataque","seguridad"]
-date = "2017-06-17T12:00:00+02:00"
+tags = ["hugo","web","github"]
+date = "2018-05-26T16:00:00+02:00"
 summary = """
-Impacto de *WannaCry*, un *ransomware* que ha secuestrado los datos de cientos de miles de ordenadores en todo el mundo. 
+*Netlify CMS* es un gestor de websites estáticos basado en *JavaScript* para *GitHub Pages*.
 """
 
 [header]
-  image = "posts/WannaCry-Map.png"
+  image = "posts/netlify-cms.png"
   caption = ""
 
 +++

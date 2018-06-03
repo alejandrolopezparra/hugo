@@ -1,5 +1,5 @@
 +++
-title = "Crear websites estáticos con Hugo"
+title = "Hugo, generador de websites estáticos"
 draft = false
 highlight = false
 math = false

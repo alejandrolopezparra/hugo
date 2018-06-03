@@ -70,14 +70,15 @@ $# git commit -m "Initial commit"
 $# git push -u origin master
 ```
 
-Sólo con esos tres pasos, ya tendríamos nuestra página web personal accesible a través de un *Endpoint* seguro `HTTPS://nombre.github.io` donde `nombre` se corresponde con el nombre de usuario de la cuenta de *GitHub*. En mi caso, es `https://alejandrolopezparra.github.io`.
+Sólo con esos tres pasos, ya tendríamos nuestra página web personal accesible a través de un *Endpoint* seguro `https://nombre.github.io` donde `nombre` se corresponde con el nombre de usuario de la cuenta de *GitHub*. En mi caso, es `https://alejandrolopezparra.github.io`.
 
 Para el caso concreto de *Hugo*, contamos con un [tutorial](https://gohugo.io/tutorials/github-pages-blog/) que trata el despliegue en *GitHub Pages* de páginas web basadas en *Hugo* tanto personales como de organizaciones y también de proyectos. También disponemos de una [guía detallada sobre *Hugo* y *GitHub Pages*](https://georgecushen.com/create-your-website-with-hugo/) del creador del [tema *Academic* para *Hugo*](https://themes.gohugo.io/academic/). 
 
 ## Asociar un dominio propio
-Una vez tenemos nuestro website alojado en un *Repository* y publicado en un *Endpoint* de *GitHub*, es el momento de que podamos asociarle un nombre de un dominio personalizado como, por ejemplo, [www.alejandrolopezparra.es](http://www.alejandrolopezparra.es). El único inconveniente de este paso es que perderemos la opción de usar *HTTPS* ya que *GitHub Pages* sólo puede usarlo con el domino `github.io`[^Cloudflare].
+Una vez tenemos nuestro website alojado en un *Repository* y publicado en un *Endpoint* de *GitHub*, es el momento de que podamos asociarle un nombre de un dominio personalizado como, por ejemplo, [www.alejandrolopezparra.es](http://www.alejandrolopezparra.es). ~~El único inconveniente de este paso es que perderemos la opción de usar *HTTPS* ya que *GitHub Pages* sólo puede usarlo con el domino `github.io`~~ [^HTTPS_custom_domains]
 
-[^Cloudflare]: Habría una alternativa que es usar [*GitHub Pages* con *Cloudflare*](https://www.goyllo.com/github/pages/free-cloudflare-ssl-for-custom-domain/).
+
+[^HTTPS_custom_domains]: Desde mayo de 2018 [*GitHub Pages* soporta HTTPS con dominios propios](https://blog.github.com/2018-05-01-github-pages-custom-domains-https/). También habría una alternativa que es usar [*GitHub Pages* con *Cloudflare*](https://www.goyllo.com/github/pages/free-cloudflare-ssl-for-custom-domain/).
 
 Para lograrlo es necesario lo siguiente:
 
