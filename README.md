@@ -25,17 +25,17 @@ You can easily create your own website using mine:
 7. Customize your new website
    * Modify *config.toml* file by tuning, at least, the following keys:
      * Global attributes
-       * *baseurl = ""*
-       * *title = ""*
-       * *copyright = ""*
-       * *googleAnalytics = ""*
+       * `baseurl = ""`
+       * `title = ""`
+       * `copyright = ""`
+       * `googleAnalytics = ""`
      * *[params]* attributes
-       * *role = ""*
-       * *organizations = ""*
-       * *avatar = ""*
+       * `role = ""`
+       * `organizations = ""`
+       * `avatar = ""`
      *  *[[params.social]]* attributes
    * Enable|Disable widgets in *content/home/* folder by setting attribute
-     * *active = true|false*
+     * `active = true|false`
 8. Build your website into the *public* folder
    ```bash
    $# hugo
