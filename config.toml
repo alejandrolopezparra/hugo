@@ -45,11 +45,11 @@ enableGitInfo = false
 
   # Your details.
   name = ""
-  role = "Servicios Avanzados del CERT"
+  role = "Responsable de Seguridad de la Información"
  
   # Organizations/Affiliations.
   #   Separate multiple entries with a comma, using the form: `[ {name="Org1", url=""}, {name="Org2", url=""} ]`.
-  organizations = [ { name = "INCIBE", url = "https://www.incibe.es" } ]
+#  organizations = [ { name = "INCIBE", url = "https://www.incibe.es" } ]
 #  organization = "INCIBE"
 #  organization_url = "https://www.incibe.es"
 

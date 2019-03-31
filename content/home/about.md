@@ -12,10 +12,11 @@ weight = 4
 # List your academic interests.
 [interests]
   interests = [
+    "Information Security",
     "Cybersecurity",
     "Network security",
-    "CERT/CSIRT",
     "Security Incidents",
+    "CERT/CSIRT",
     "Analytics",
     "Location Intelligence",
     "Big Data"
