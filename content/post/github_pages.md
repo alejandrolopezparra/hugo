@@ -3,7 +3,7 @@ title = "Alojar websites estáticos en GitHub Pages"
 draft = false
 highlight = true
 math = false
-tags = ["github","amazon","DNS","web","hugo"]
+tags = ["github","DNS","web","hugo"]
 date = "2017-05-20T12:00:00+02:00"
 summary = """
 *GitHub Pages* es un servicio gratuito de alojamiento de websites estáticos que rivaliza con *Amazon S3*. 
@@ -99,7 +99,7 @@ Desde mi punto de vista, su mayor inconveniente es que no dispone de estadístic
 
 En cualquier caso, he optado por migrar el alojamiento de mi website de *Amazon S3* a *GitHub Pages* por las ventajas que ofrece a coste cero.
 
-No obstante, *Amazon S3* y *GitHub Pages* no son las únicas alternativas. También tenemos otras posibilidades entre las que se encuentran:
+No obstante, *Amazon S3* y *GitHub Pages* no son las únicas alternativas. También tenemos otras posibilidades, entre las que se encuentran:
 
 - [Google Cloud Storage](https://cloud.google.com/storage/) con su [guía](https://cloud.google.com/storage/docs/hosting-static-website). De pago.
 - [BitBucket](https://bitbucket.org/) que también tiene un [tutorial para Hugo](https://gohugo.io/tutorials/hosting-on-bitbucket/). Gratuito.

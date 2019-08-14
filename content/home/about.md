@@ -2,7 +2,7 @@
 # About/Biography widget.
 
 date = "2017-01-28T12:00:00"
-#draft = false
+draft = false
 active = true
 widget = "about"
 
@@ -52,6 +52,8 @@ weight = 4
 
 # Biografía
 
-Natural de [Córdoba](http://www.turismodecordoba.org/) y entusiasta de la seguridad de la información desde la etapa universitaria. Prueba de ello son los 2 proyectos fin de carrera en los que participé: "Implementación de una Infraestructura de Clave Pública (PKI)" y "Gestión de auto matrículas con certificados digitales". Hoy en día, después de una experiencia profesional de más de 12 años en empresas del sector de la seguridad informática, estoy particularmente especializado en **detección, alerta temprada y respuesta ante incidentes, tecnologías e inteligencia en ciberseguridad y redes**. En los últimos años me he centrado más en funciones de gestión pero sin abandonar lo que más me motiva, la parte técnica.
+Natural de [Córdoba](http://www.turismodecordoba.org/) y entusiasta de la seguridad de la información desde mi etapa universitaria. Prueba de ello son los 2 proyectos fin de carrera en los que participé junto a mi compañero [Emilio Luque](https://es.linkedin.com/in/emilio-luque-linares-365238175): "Implementación de una Infraestructura de Clave Pública (PKI)" y "Gestión de auto matrículas con certificados digitales".
 
-En general, me apasiona todo lo relacionado con Internet, las nuevas tecnologías, la ciberseguridad, hacking, Android, Linux, Internet of Things. Siempre he tenido gran curiosidad por entender cómo funcionan las cosas y, en especial, cualquier tecnología.
+Hoy en día, después de una experiencia profesional de más de 15 años en empresas públicas y privadas del sector de la seguridad de la información, estoy particularmente especializado en **detección y respuesta ante incidentes, *threat intelligence*, prevención, concienciación, alerta temprana y gobierno de la seguridad**. En los últimos años me he centrado más en funciones de gestión, pero intentando no abandonar la parte técnica, que es lo que más me motiva.
+
+En general, me apasiona todo lo relacionado con *Internet*, las nuevas tecnologías, la ciberseguridad, *hacking*, los sistemas operativos (*Android*, *Linux*, *macOS*, *Windows*), las redes, Internet of Things, etc. Siempre he tenido gran curiosidad por entender cómo funcionan las cosas y, en especial, las tecnologías de la información.

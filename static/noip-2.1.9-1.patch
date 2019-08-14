@@ -1,0 +1,182 @@
+diff -c noip-2.1.9-1/Makefile noip-2.1.9-1_macOS/Makefile
+*** noip-2.1.9-1/Makefile	Tue Nov 25 20:41:16 2008
+--- noip-2.1.9-1_macOS/Makefile	Tue Aug 10 22:25:12 2019
+***************
+*** 8,17 ****
+  
+  # these defines are for Linux
+  LIBS=
+! ARCH=linux
+  
+  # for Mac OS X and BSD systems that have getifaddr(), uncomment the next line
+! #ARCH=bsd_with_getifaddrs
+  
+  # for early BSD systems without getifaddrs(), uncomment the next line
+  #ARCH=bsd
+--- 8,17 ----
+  
+  # these defines are for Linux
+  LIBS=
+! #ARCH=linux
+  
+  # for Mac OS X and BSD systems that have getifaddr(), uncomment the next line
+! ARCH=bsd_with_getifaddrs
+  
+  # for early BSD systems without getifaddrs(), uncomment the next line
+  #ARCH=bsd
+diff -c noip-2.1.9-1/noip2.c noip-2.1.9-1_macOS/noip2.c
+*** noip-2.1.9-1/noip2.c	Tue Nov 25 20:50:09 2008
+--- noip-2.1.9-1_macOS/noip2.c	Tue Aug 10 22:36:54 2019
+***************
+*** 338,344 ****
+  #define CMSG42  "Can't get our visible IP address from %s"
+  #define CMSG43  "Invalid domain name '%s'"
+  #define CMSG44  "Invalid host name '%s'"
+! #define CMSG99	"\nThis client has expired.  Please go to http://www.no-ip.com/downloads.php"  
+  #define CMSG99a	"to get our most recent version.\n"  
+  
+  #define CMSG100 \
+--- 338,344 ----
+  #define CMSG42  "Can't get our visible IP address from %s"
+  #define CMSG43  "Invalid domain name '%s'"
+  #define CMSG44  "Invalid host name '%s'"
+! #define CMSG99	"\nThis client has expired.  Please go to https://www.no-ip.com/downloads.php"  
+  #define CMSG99a	"to get our most recent version.\n"  
+  
+  #define CMSG100 \
+***************
+*** 1559,1565 ****
+  	} else {
+  	    // set up text for web page query
+  	    sprintf(buffer, 
+! 		"GET http://%s/ HTTP/1.0\r\n%s\r\n\r\n", NOIP_IP_SCRIPT,USER_AGENT);
+  	    if ((x = converse_with_web_server()) < 0) {
+  		handle_dynup_error(x);
+  	    } else {
+--- 1559,1565 ----
+  	} else {
+  	    // set up text for web page query
+  	    sprintf(buffer, 
+! 		"GET https://%s/ HTTP/1.0\r\n%s\r\n\r\n", NOIP_IP_SCRIPT,USER_AGENT);
+  	    if ((x = converse_with_web_server()) < 0) {
+  		handle_dynup_error(x);
+  	    } else {
+***************
+*** 1609,1615 ****
+  	pos = &buffer[BIGBUFLEN / 2];
+  	bencode(buffer, pos);
+  	sprintf(buffer, 
+! 	    "GET http://%s/%s?%s%s HTTP/1.0\r\n%s\r\n\r\n",
+  		NOIP_NAME, UPDATE_SCRIPT, REQUEST, pos, USER_AGENT);
+  	x = converse_with_web_server();
+  	if (x < 0)	{
+--- 1609,1615 ----
+  	pos = &buffer[BIGBUFLEN / 2];
+  	bencode(buffer, pos);
+  	sprintf(buffer, 
+! 	    "GET https://%s/%s?%s%s HTTP/1.0\r\n%s\r\n\r\n",
+  		NOIP_NAME, UPDATE_SCRIPT, REQUEST, pos, USER_AGENT);
+  	x = converse_with_web_server();
+  	if (x < 0)	{
+***************
+*** 2134,2140 ****
+  	    return x;
+  	}    
+  	// get the name list
+!         sprintf(buffer, "GET http://%s/%s%s%s HTTP/1.0\r\n%s\r\n\r\n",
+                  NOIP_NAME, SETTING_SCRIPT, REQUEST, encline, USER_AGENT);
+          if ((x = converse_with_web_server()) <= 0) {
+              handle_dynup_error(x);
+--- 2134,2140 ----
+  	    return x;
+  	}    
+  	// get the name list
+!         sprintf(buffer, "GET https://%s/%s%s%s HTTP/1.0\r\n%s\r\n\r\n",
+                  NOIP_NAME, SETTING_SCRIPT, REQUEST, encline, USER_AGENT);
+          if ((x = converse_with_web_server()) <= 0) {
+              handle_dynup_error(x);
+***************
+*** 2184,2190 ****
+  		snprintf(host, LINELEN-1, "%s", p);
+  		// set up web page update command using wget
+  		sprintf(ourbuffer, 
+! 		    "%s -q -O - 'http://%s/%s?host=%s&domain=%s'", 
+  			WGET_PGM, UPD_NAME, UPD_SCRIPT, host, domain);
+  #ifdef DEBUG
+  		if (my_instance->debug) 
+--- 2184,2190 ----
+  		snprintf(host, LINELEN-1, "%s", p);
+  		// set up web page update command using wget
+  		sprintf(ourbuffer, 
+! 		    "%s -q -O - 'https://%s/%s?host=%s&domain=%s'", 
+  			WGET_PGM, UPD_NAME, UPD_SCRIPT, host, domain);
+  #ifdef DEBUG
+  		if (my_instance->debug) 
+***************
+*** 2312,2318 ****
+  int get_all_device_names(char *devs)
+  {
+  	int		devnum=0;
+! 	unsigned char	*p, *q, *dq;
+  
+  
+  #ifdef bsd_with_getifaddrs
+--- 2312,2318 ----
+  int get_all_device_names(char *devs)
+  {
+  	int		devnum=0;
+! 	char	*p, *q, *dq;
+  
+  
+  #ifdef bsd_with_getifaddrs
+***************
+*** 2322,2328 ****
+  	    perror("getifaddrs()");
+  	    exit(1);
+  	}
+! 	dq = (unsigned char *)devs;     // point at name list
+  	for (ifa = ifap; ifa; ifa = ifa->ifa_next) {
+  		if (ifa->ifa_addr->sa_family == AF_LINK) {
+  // FreeBSD doesn't define some of these!
+--- 2322,2328 ----
+  	    perror("getifaddrs()");
+  	    exit(1);
+  	}
+! 	dq = (char *)devs;     // point at name list
+  	for (ifa = ifap; ifa; ifa = ifa->ifa_next) {
+  		if (ifa->ifa_addr->sa_family == AF_LINK) {
+  // FreeBSD doesn't define some of these!
+***************
+*** 2510,2516 ****
+  	    Msg(CMSG27);
+  	    return;
+  	}
+!         sprintf(buffer, "GET http://%s/\r\n\r\n", NOIP_IP_SCRIPT);
+          if ((x = converse_with_web_server()) <= 0) {
+              handle_dynup_error(x);
+  	    return;
+--- 2510,2516 ----
+  	    Msg(CMSG27);
+  	    return;
+  	}
+!         sprintf(buffer, "GET https://%s/\r\n\r\n", NOIP_IP_SCRIPT);
+          if ((x = converse_with_web_server()) <= 0) {
+              handle_dynup_error(x);
+  	    return;
+***************
+*** 2537,2543 ****
+  	}
+  	sprintf(line, "%s%s%s%s", USTRNG, login, PWDSTRNG, password);
+  	bencode(line, encline);
+!         sprintf(buffer, "GET http://%s/%s%s%s HTTP/1.0\r\n%s\r\n\r\n", 
+         		NOIP_NAME, SETTING_SCRIPT, REQUEST, encline, USER_AGENT);
+          if ((x = converse_with_web_server()) <= 0) {
+              handle_dynup_error(x);
+--- 2537,2543 ----
+  	}
+  	sprintf(line, "%s%s%s%s", USTRNG, login, PWDSTRNG, password);
+  	bencode(line, encline);
+!         sprintf(buffer, "GET https://%s/%s%s%s HTTP/1.0\r\n%s\r\n\r\n", 
+         		NOIP_NAME, SETTING_SCRIPT, REQUEST, encline, USER_AGENT);
+          if ((x = converse_with_web_server()) <= 0) {
+              handle_dynup_error(x);
