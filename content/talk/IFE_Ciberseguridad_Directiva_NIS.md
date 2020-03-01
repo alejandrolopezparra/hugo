@@ -1,20 +1,20 @@
 +++
-title = "El estado de la Ciberseguridad en España"
-date = 2017-09-19T21:30:00+02:00  # Schedule page publish date.
+title = "Análisis forense y gestión de incidentes"
+date = 2017-06-06T20:00:00+02:00  # Schedule page publish date.
 draft = false
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-time_start = 2017-09-19T10:00:00+02:00
-time_end = 2017-09-19T10:20:00+02:00
+time_start = 2017-06-06T11:00:00+02:00
+time_end = 2017-06-06T12:45:00+02:00
 
 # Abstract and optional shortened version.
-abstract = "Ponencia sobre el estado de la ciberseguridad, destacando la importancia de la monitorización de incidencias y la concienciación, ya que el eslabón más débil de la cadena en ciberseguridad es el usuario"
-abstract_short = "Ponencia sobre el estado de la cibserguridad en España"
+abstract = "Ponencia en el Instituto de Fomento Empresarial sobre el Protocolo ante un incidente de seguridad: recogida de evidencias, mantenimiento de la cadena de custodia, etc.; Directiva NIS y Reglamento Europeo de Protección de Datos; Obligaciones y plazos para comunicar las brechas de seguridad a las autoridades de control"
+abstract_short = "Análisis forense y gestión de incidentes en el marco de la Directiva NIS"
 
 # Name of event and optional event URL.
-event = "Foro Ransomware: Alerta Máxima"
-event_url = "http://ads.bps.com.es/eventos-bps/foroseguridad/index.html"
+event = "Instituto de Fomento Empresarial: Ciberseguridad y directiva NIS"
+event_url = "http://www.ife.es/videos-conferencias-ife/item/analisis-forense-y-gestion-de-incidentes"
 
 # Location of event.
 location = "Madrid"
@@ -31,13 +31,13 @@ projects = []
 
 # Tags (optional).
 #   Set `tags = []` for no tags, or use the form `tags = ["A Tag", "Another Tag"]` for one or more tags.
-tags = ["ciberataque","malware","INCIBE", "seguridad"]
+tags = ["INCIBE", "seguridad"]
 
 # Links (optional).
-url_pdf = "http://www.redestelecom.es/siteresources/files/831/36.pdf"
+url_pdf = ""
 url_slides = ""
-url_video = "https://www.youtube.com/watch?v=BCAm6cZM7-w"
-url_code = "https://www.redestelecom.es/seguridad/noticias/1100874002503/peor-llegar.1.html"
+url_video = "https://player.vimeo.com/video/221193217"
+url_code = ""
 
 # Does the content use math formatting?
 math = false
@@ -48,7 +48,7 @@ highlight = false
 # Featured image
 # Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
 [header]
-image = "talks/Foro_Ransomware_Alerta_Maxima.jpg"
+image = "talks/IFE_Ciberseguridad_Directiva_NIS.jpg"
 caption = ""
 
 +++

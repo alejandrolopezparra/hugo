@@ -37,7 +37,7 @@ tags = ["INCIBE", "Big Data"]
 url_pdf = ""
 url_slides = ""
 url_video = ""
-url_code = ""
+url_code = "https://www2.abogacia.es/actualidad/noticias/enatic-analiza-los-retos-y-oportunidades-del-big-data-para-los-abogados/"
 
 # Does the content use math formatting?
 math = false
@@ -48,7 +48,7 @@ highlight = false
 # Featured image
 # Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
 [header]
-image = "talks/Retos_Oportunidades_Big_Data_Abogacia.jpg"
+image = "talks/ENATIC_Retos_Oportunidades_Big_Data_Abogacia.jpg"
 caption = ""
 
 +++
